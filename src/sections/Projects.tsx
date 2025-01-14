@@ -4,7 +4,8 @@ import FormPreview from '@/assets/images/projects/muiti_step_form_preview.jpeg';
 import SpaceTravelPreview from '@/assets/images/projects/Space_travel_preview.jpeg';
 import Image from 'next/image';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import grainImage from '@/assets/images/grain.jpg';
+import { SectionTitle } from '@/components/SectionTitle';
+import { Card } from '@/components/Card';
 
 const portfolioProjects = [
   {
@@ -37,32 +38,15 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 md:pb-20">
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase text-sm font-semibold traking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
-            Практика пет-проектов
-          </p>
-        </div>
-
-        <h2 className="font-serif text-5xl md:text-6xl text-center mt-5">Портфолио</h2>
-        <div className="flex justify-center">
-          <p className="text-center text-sm md:text-base md:max-w-[360px] text-white/60 mt-4">
-            Подборка проектов, отражающих мой опыт в разработке интерактивных и адаптивных пользовательских интерфейсов.
-          </p>
-        </div>
+        <SectionTitle
+          eyebrow="Практика пет-проектов"
+          title="Портфолио"
+          description="Подборка проектов, отражающих мой опыт в разработке интерактивных и адаптивных пользовательских интерфейсов."
+        />
 
         <div className="flex flex-col gap-16 md:gap-20 mt-10 md:pt-12">
           {portfolioProjects.map((project) => (
-            <div
-              key={project.title}
-              className="bg-emerald-900/5 rounded-3xl overflow-hidden relative z-0 
-              after:z-10 after:content-[''] after:absolute after:inset-0 after:rounded-3xl px-8 md:px-12 pt-8 md:pt-12 lg:p-14
-              after:outline after:outline-2 after:-outline-offset-2 after:outline-white/20 after:pointer-events-none">
-              <div
-                className="absolute inset-0 -z-10 opacity-5"
-                style={{
-                  backgroundImage: `url(${grainImage.src})`,
-                }}></div>
-
+            <Card className="pb-0 px-8 md:px-12 pt-8 md:pt-12 lg:p-14" key={project.title}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pr-5">
                   <h3
@@ -86,7 +70,7 @@ export const ProjectsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
