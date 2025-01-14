@@ -3,7 +3,7 @@ import { Card } from '@/components/Card';
 
 export const ContactSection = () => {
   return (
-    <section className="sm:mt-10 md:mt-12 lg:mt-20 mb:20">
+    <section className="sm:mt-10 md:mt-12 lg:mt-20">
       <div className="container">
         <Card className="bg-gradient-to-r from-emerald-300/70 to-sky-400/70 md:inline-flex md:items-center md:gap-12 md:px-8 lg:px-10">
           <div className="flex flex-col sm:gap-4 md:gap-3 lg:gap-6 sm:mb-6 md:mb-0 sm:text-center md:text-left">
