@@ -5,10 +5,12 @@ export const ContactSection = () => {
   return (
     <section className="sm:mt-10 md:mt-12 lg:mt-20 mb:20">
       <div className="container">
-        <Card className="bg-gradient-to-r from-emerald-300/70 to-sky-400/70 md:inline-flex md:items-center md:gap-12">
-          <div className="flex flex-col sm:gap-4 md:gap-3 sm:mb-6 md:mb-0 sm:text-center md:text-left">
-            <h2 className="sm:text-3xl md:text-4xl font-bold tracking-wide text-gray-950/90">Давайте создавать нечто выдающееся вместе</h2>
-            <p className="sm:text-[16px] md:text-lg lg:text-xl sm:px-3 md:px-0">
+        <Card className="bg-gradient-to-r from-emerald-300/70 to-sky-400/70 md:inline-flex md:items-center md:gap-12 md:px-8 lg:px-10">
+          <div className="flex flex-col sm:gap-4 md:gap-3 lg:gap-6 sm:mb-6 md:mb-0 sm:text-center md:text-left">
+            <h2 className="sm:text-3xl md:text-4xl lg:text-[36.5px] font-bold tracking-wide text-gray-950/90">
+              Давайте создадим нечто выдающееся вместе
+            </h2>
+            <p className="sm:text-[16px] md:text-lg lg:text-xl text-gray-950/70 sm:px-3 md:px-0">
               Готова воплощать новые идеи в жизнь.
               <br className="sm:block md:hidden" />
               Хотела бы поработать в крутой команде, готовой поделиться своим опытом.&nbsp;

@@ -1183,6 +1183,12 @@ video {
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
 }
+.text-gray-950\/80 {
+  color: rgb(3 7 18 / 0.8);
+}
+.text-gray-950\/60 {
+  color: rgb(3 7 18 / 0.6);
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1520,6 +1526,16 @@ video {
     padding-bottom: 12rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -1618,6 +1634,10 @@ video {
     gap: 4rem;
   }
 
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .lg\:p-14 {
     padding: 3.5rem;
   }
@@ -1629,6 +1649,16 @@ video {
   .lg\:py-60 {
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pr-5 {
@@ -1647,6 +1677,39 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .lg\:text-\[38px\] {
+    font-size: 38px;
+  }
+
+  .lg\:text-\[37px\] {
+    font-size: 37px;
+  }
+
+  .lg\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .lg\:text-\[36\.5px\] {
+    font-size: 36.5px;
+  }
+
+  .lg\:text-\[36\2c 5px\] {
+    font-size: 36,5px;
   }
 }
 
