@@ -2,7 +2,7 @@ import memojiIcon from '@/assets/images/mymemoji.png';
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import grainImage from '@/assets/images/grain.jpg';
-import { Sparkle, Star } from '@/components/Stars';
+import { Star } from '@/components/Stars';
 
 export const HeroSection = () => {
   return (
@@ -16,17 +16,21 @@ export const HeroSection = () => {
         <div className="size-[1420px] hero-ring opacity-30" />
         <div className="size-[1620px] hero-ring opacity-15" />
 
-        <Star orbit={800} position={-75} size={112} />
-        <Star orbit={630} position={125} size={35} />
-        <Star orbit={500} position={15} size={50} />
-
-        <Sparkle orbit={320} position={-30} size={20} />
-        <Sparkle orbit={390} position={85} size={28} />
-        <Sparkle orbit={510} position={185} size={40} />
-        <Sparkle orbit={560} position={-15} size={12} />
-        <Sparkle orbit={800} position={155} size={50} />
-        <Sparkle orbit={900} position={-60} size={25} />
-        <Sparkle orbit={950} position={100} size={20} />
+        {/* Stars */}
+        <Star orbit={800} spinSpeed={31} position={-75} size={112} />
+        <Star orbit={630} spinSpeed={32} position={125} size={35} />
+        <Star orbit={500} spinSpeed={34} position={15} size={50} />
+        {/* Sparkles */}
+        <Star sparkle orbit={320} spinSpeed={36} position={-30} size={20} />
+        <Star sparkle orbit={390} spinSpeed={35} position={85} size={28} />
+        <Star sparkle orbit={510} spinSpeed={34} position={185} size={40} />
+        <Star sparkle orbit={570} spinSpeed={33} position={-15} size={12} />
+        <Star sparkle orbit={670} spinSpeed={32} position={60} size={14} />
+        <Star sparkle orbit={680} spinSpeed={32} position={-130} size={12} />
+        <Star sparkle orbit={800} spinSpeed={31} position={155} size={50} />
+        <Star sparkle orbit={830} spinSpeed={31} position={0} size={26} />
+        <Star sparkle orbit={900} spinSpeed={30} position={-60} size={25} />
+        <Star sparkle orbit={950} spinSpeed={30} position={100} size={20} />
       </div>
 
       <div className="container">
@@ -34,7 +38,9 @@ export const HeroSection = () => {
           <Image src={memojiIcon} alt={'Memoji'} className="size-[80px] h-[auto]" />
 
           <div className="bg-gray-950 border border-white px-5 py-1 inline-flex items-center gap-4 rounded-2xl mt-[-3px]">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 inset-0 rounded-full absolute animate-ping" />
+            </div>
             <div className="text-sm font-medium">Открыта для новых проектов</div>
           </div>
         </div>
