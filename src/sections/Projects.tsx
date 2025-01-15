@@ -45,8 +45,11 @@ export const ProjectsSection = () => {
         />
 
         <div className="flex flex-col gap-16 md:gap-20 mt-10 md:pt-12">
-          {portfolioProjects.map((project) => (
-            <Card className="pb-0 px-8 md:px-12 pt-8 md:pt-12 lg:p-14" key={project.title}>
+          {portfolioProjects.map((project, index) => (
+            <Card
+              key={project.title}
+              className="pb-0 px-8 md:px-12 pt-8 md:pt-12 lg:p-14 sticky"
+              style={{ top: `calc(64px + ${index * 38}px)` }}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pr-5">
                   <h3
