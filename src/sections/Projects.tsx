@@ -60,7 +60,7 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4" />
                   <p className="text-sm md:text-lg text-white/50 mt-4 sm:text-center lg:text-left">{project.description}</p>
 
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full lg:w-auto px-4 rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8">
                       <span>Перейти в репозиторий</span>
                       <ArrowUpRightIcon className="size-4" />
