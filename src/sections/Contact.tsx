@@ -20,7 +20,7 @@ export const ContactSection: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center md:justify-between gap-2 text-[18px]">
-            <a href="https://drive.google.com/drive/folders/1Lrlb7m4bnWY2DRDMMv5jNeUEVtvtR9i7?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/17cbWVKYBXPd1W9hMRp1wn5zvfiuEFXiM/view?usp=sharing" target="_blank">
               <button type="button" className="button-link">
                 <span>Скачать CV PDF</span>
                 <ArrowUpRightIcon />
