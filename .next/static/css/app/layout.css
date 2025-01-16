@@ -949,30 +949,6 @@ video {
 .animate-spin {
   animation: spin 1s linear infinite;
 }
-@keyframes pulse {
-
-  50% {
-    opacity: .5;
-  }
-}
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-@keyframes bounce {
-
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-.animate-bounce {
-  animation: bounce 1s infinite;
-}
 .flex-col {
   flex-direction: column;
 }
@@ -1325,6 +1301,9 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
+html {
+    scroll-behavior: smooth;
+  }
 @media (min-width: 1200px) {
 
   .container {
@@ -1339,71 +1318,57 @@ video {
   -webkit-mask-image: radial-gradient(50% 50% at bottom center,black,transparent);
           mask-image: radial-gradient(50% 50% at bottom center,black,transparent);
 }
-
 .after\:pointer-events-none::after {
   content: var(--tw-content);
   pointer-events: none;
 }
-
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
 }
-
 .after\:inset-0::after {
   content: var(--tw-content);
   inset: 0px;
 }
-
 .after\:z-10::after {
   content: var(--tw-content);
   z-index: 10;
 }
-
 .after\:rounded-3xl::after {
   content: var(--tw-content);
   border-radius: 1.5rem;
 }
-
 .after\:outline::after {
   content: var(--tw-content);
   outline-style: solid;
 }
-
 .after\:outline-2::after {
   content: var(--tw-content);
   outline-width: 2px;
 }
-
 .after\:-outline-offset-2::after {
   content: var(--tw-content);
   outline-offset: -2px;
 }
-
 .after\:outline-white\/20::after {
   content: var(--tw-content);
   outline-color: rgb(255 255 255 / 0.2);
 }
-
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
 }
-
 .hover\:bg-green-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
-
 .hover\:text-green-900:hover {
   --tw-text-opacity: 1;
   color: rgb(20 83 45 / var(--tw-text-opacity));
 }
-
 .hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
 }
-
 @media (min-width: 375px) {
 
   .sm\:my-3 {
@@ -1475,7 +1440,6 @@ video {
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:col-span-2 {
@@ -1669,7 +1633,6 @@ video {
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 1200px) {
 
   .lg\:absolute {

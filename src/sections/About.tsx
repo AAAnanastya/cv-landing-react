@@ -12,7 +12,7 @@ import { HobbiesBox } from '@/components/HobbiesBox';
 
 export const AboutSection = () => {
   return (
-    <div className="py-20">
+    <section id="about" className="py-20">
       <div className="container">
         <SectionTitle
           eyebrow="Познакомимся ближе"
@@ -65,6 +65,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -17,6 +17,10 @@
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .container {
     @apply lg:max-w-5xl;
   }
