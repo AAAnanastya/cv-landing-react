@@ -9,9 +9,12 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      xs: '300px',
       sm: '375px',
       md: '768px',
       lg: '1200px',
+      xl: '1800px',
+      xxl: '2160px',
     },
     container: {
       center: true,

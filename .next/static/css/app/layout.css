@@ -549,6 +549,26 @@ video {
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+  .button-link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  font-weight: 700;
+}
+
+  @media (min-width: 300px) {
+
+  .button-link {
+    width: 210px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
   @media (min-width: 375px) {
@@ -683,6 +703,12 @@ video {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+@media (min-width: 300px) {
+
+  .container {
+    max-width: 300px;
+  }
+}
 @media (min-width: 375px) {
 
   .container {
@@ -701,6 +727,18 @@ video {
 
   .container {
     max-width: 1200px;
+  }
+}
+@media (min-width: 1800px) {
+
+  .container {
+    max-width: 1800px;
+  }
+}
+@media (min-width: 2160px) {
+
+  .container {
+    max-width: 2160px;
   }
 }
 .pointer-events-auto {
@@ -1140,22 +1178,6 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1194,9 +1216,6 @@ video {
 }
 .text-\[13px\] {
   font-size: 13px;
-}
-.text-\[15px\] {
-  font-size: 15px;
 }
 .text-\[18px\] {
   font-size: 18px;
@@ -1317,9 +1336,6 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
-.duration-200 {
-  transition-duration: 200ms;
-}
 html {
     scroll-behavior: smooth;
   }
@@ -1393,60 +1409,13 @@ html {
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
-.hover\:hover\:bg-white\/10:hover:hover {
-  background-color: rgb(255 255 255 / 0.1);
-}
-
-.hover\:hover\:bg-blue-emerald:hover:hover {
+.hover\:hover\:bg-green-100:hover:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 25 39 / var(--tw-bg-opacity));
-}
-
-.hover\:hover\:bg-emerald-950:hover:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 44 34 / var(--tw-bg-opacity));
-}
-
-.hover\:hover\:bg-emerald-950\/10:hover:hover {
-  background-color: rgb(2 44 34 / 0.1);
-}
-
-.hover\:hover\:bg-emerald-950\/40:hover:hover {
-  background-color: rgb(2 44 34 / 0.4);
-}
-
-.hover\:hover\:bg-emerald-900\/40:hover:hover {
-  background-color: rgb(6 78 59 / 0.4);
-}
-
-.hover\:hover\:bg-emerald-900\/20:hover:hover {
-  background-color: rgb(6 78 59 / 0.2);
-}
-
-.hover\:bg-emerald-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 78 59 / var(--tw-bg-opacity));
-}
-
-.hover\:hover\:bg-emerald-900\/10:hover:hover {
-  background-color: rgb(6 78 59 / 0.1);
-}
-
-.hover\:hover\:bg-green-100\/10:hover:hover {
-  background-color: rgb(220 252 231 / 0.1);
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
 .hover\:hover\:bg-green-100\/5:hover:hover {
   background-color: rgb(220 252 231 / 0.05);
-}
-
-.hover\:hover\:bg-green-100\/20:hover:hover {
-  background-color: rgb(220 252 231 / 0.2);
-}
-
-.hover\:hover\:bg-green-100:hover:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
 .hover\:text-green-900:hover {
@@ -1456,6 +1425,75 @@ html {
 
 .hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
+}
+
+@media (min-width: 300px) {
+
+  .xs\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .xs\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .xs\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .xs\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .xs\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xs\:py-0\.5 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .xs\:text-center {
+    text-align: center;
+  }
+
+  .xs\:text-\[13px\] {
+    font-size: 13px;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xs\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xs\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .xs\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .xs\:text-\[23px\] {
+    font-size: 23px;
+  }
+
+  .xs\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .xs\:text-\[22px\] {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 375px) {
@@ -1511,6 +1549,16 @@ html {
     padding-right: 0.75rem;
   }
 
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -1520,6 +1568,10 @@ html {
     line-height: 2.25rem;
   }
 
+  .sm\:text-\[15px\] {
+    font-size: 15px;
+  }
+
   .sm\:text-\[16px\] {
     font-size: 16px;
   }
@@ -1527,6 +1579,10 @@ html {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:tracking-wide {
+    letter-spacing: 0.025em;
   }
 }
 
@@ -1812,6 +1868,22 @@ html {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  .xl\:py-80 {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+}
+
+@media (min-width: 2160px) {
+
+  .xxl\:py-\[420px\] {
+    padding-top: 420px;
+    padding-bottom: 420px;
   }
 }
 

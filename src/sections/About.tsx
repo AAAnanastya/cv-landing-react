@@ -41,7 +41,7 @@ export const AboutSection = () => {
               <JobsItem position="Менеджер по лидогенерации" company="Sibedge" period="Февраль, 2019 - Январь, 2021" />
             </Card>
 
-            <Card className="sm:h-[260px] md:h-full p-0 flex flex-col md:col-start-1 md:col-span-3 md:row-start-4 md:row-span-2">
+            <Card className="xs:h-[250px] sm:h-[260px] md:h-full p-0 flex flex-col md:col-start-1 md:col-span-3 md:row-start-4 md:row-span-2">
               <CardHeader title="Вне разработки" className="p-6">
                 Мои интересы и хобби.
               </CardHeader>

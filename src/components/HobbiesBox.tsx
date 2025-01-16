@@ -49,14 +49,14 @@ export const HobbiesBox = () => {
       {hobbies.map((hobby) => (
         <motion.div
           key={hobby.title}
-          className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1 absolute"
+          className="inline-flex items-center gap-2 xs:px-4 sm:px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full xs:py-0.5 sm:py-1 absolute"
           style={{
             left: hobby.left,
             top: hobby.top,
           }}
           drag
           dragConstraints={constraintRef}>
-          <span className="text-[15px] font-semibold tracking-wide text-gray-950/70">{hobby.title}</span>
+          <span className="xs:text-xs sm:text-[15px] font-semibold sm:tracking-wide text-gray-950/70">{hobby.title}</span>
           <span className="text-lg">{hobby.emoji}</span>
         </motion.div>
       ))}
