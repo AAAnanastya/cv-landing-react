@@ -1301,6 +1301,9 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
+.duration-200 {
+  transition-duration: 200ms;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -1318,57 +1321,127 @@ html {
   -webkit-mask-image: radial-gradient(50% 50% at bottom center,black,transparent);
           mask-image: radial-gradient(50% 50% at bottom center,black,transparent);
 }
+
 .after\:pointer-events-none::after {
   content: var(--tw-content);
   pointer-events: none;
 }
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
 }
+
 .after\:inset-0::after {
   content: var(--tw-content);
   inset: 0px;
 }
+
 .after\:z-10::after {
   content: var(--tw-content);
   z-index: 10;
 }
+
 .after\:rounded-3xl::after {
   content: var(--tw-content);
   border-radius: 1.5rem;
 }
+
 .after\:outline::after {
   content: var(--tw-content);
   outline-style: solid;
 }
+
 .after\:outline-2::after {
   content: var(--tw-content);
   outline-width: 2px;
 }
+
 .after\:-outline-offset-2::after {
   content: var(--tw-content);
   outline-offset: -2px;
 }
+
 .after\:outline-white\/20::after {
   content: var(--tw-content);
   outline-color: rgb(255 255 255 / 0.2);
 }
+
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
 }
+
 .hover\:bg-green-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
+
+.hover\:hover\:bg-white\/10:hover:hover {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:hover\:bg-blue-emerald:hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 25 39 / var(--tw-bg-opacity));
+}
+
+.hover\:hover\:bg-emerald-950:hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 44 34 / var(--tw-bg-opacity));
+}
+
+.hover\:hover\:bg-emerald-950\/10:hover:hover {
+  background-color: rgb(2 44 34 / 0.1);
+}
+
+.hover\:hover\:bg-emerald-950\/40:hover:hover {
+  background-color: rgb(2 44 34 / 0.4);
+}
+
+.hover\:hover\:bg-emerald-900\/40:hover:hover {
+  background-color: rgb(6 78 59 / 0.4);
+}
+
+.hover\:hover\:bg-emerald-900\/20:hover:hover {
+  background-color: rgb(6 78 59 / 0.2);
+}
+
+.hover\:bg-emerald-900:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 78 59 / var(--tw-bg-opacity));
+}
+
+.hover\:hover\:bg-emerald-900\/10:hover:hover {
+  background-color: rgb(6 78 59 / 0.1);
+}
+
+.hover\:hover\:bg-green-100\/10:hover:hover {
+  background-color: rgb(220 252 231 / 0.1);
+}
+
+.hover\:hover\:bg-green-100\/5:hover:hover {
+  background-color: rgb(220 252 231 / 0.05);
+}
+
+.hover\:hover\:bg-green-100\/20:hover:hover {
+  background-color: rgb(220 252 231 / 0.2);
+}
+
+.hover\:hover\:bg-green-100:hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
 .hover\:text-green-900:hover {
   --tw-text-opacity: 1;
   color: rgb(20 83 45 / var(--tw-text-opacity));
 }
+
 .hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
 }
+
 @media (min-width: 375px) {
 
   .sm\:my-3 {
@@ -1440,6 +1513,7 @@ html {
     line-height: 1.75rem;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:col-span-2 {
@@ -1633,6 +1707,7 @@ html {
     line-height: 1.75rem;
   }
 }
+
 @media (min-width: 1200px) {
 
   .lg\:absolute {

@@ -19,7 +19,7 @@ export const Star: FC<StarProps> = ({ sparkle, orbit, spinSpeed, position, size 
   };
 
   return (
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">
       <div className="animate-spin" style={{ animationDuration: `${spinSpeed}s` }}>
         <div style={{ width: `${orbit}px`, height: `${orbit}px`, transform: `rotate(${position}deg)` }}>
           <div className="inline-flex" style={{ transform: `rotate(${rotationAngle}deg)` }}>

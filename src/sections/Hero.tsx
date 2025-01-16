@@ -7,7 +7,9 @@ import { Star } from '@/components/Stars';
 export const HeroSection = () => {
   return (
     <section id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip max-h-[100%]">
-      <div className="absolute inset-0" style={{ maskImage: 'linear-gradient(to bottom, transparent, black 10%, black 80%, transparent)' }}>
+      <div
+        className="absolute inset-0 -z-10"
+        style={{ maskImage: 'linear-gradient(to bottom, transparent, black 10%, black 80%, transparent)' }}>
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }} />
         <div className="size-[620px] hero-ring" />
         <div className="size-[820px] hero-ring opacity-90" />
@@ -53,15 +55,19 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Ознакомиться с портфолио</span>
-            <ArrowDown className="size-4" />
-          </button>
+          <a href="#projects">
+            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:hover:bg-green-100/5 transition duration-300">
+              <span className="font-semibold">Ознакомиться с портфолио</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </a>
 
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
-            <span>👋</span>
-            <span className="font-semibold">Связаться со мной</span>
-          </button>
+          <a href="#contacts">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl hover:hover:bg-green-100 transition duration-300">
+              <span>👋</span>
+              <span className="font-semibold">Связаться со мной</span>
+            </button>
+          </a>
         </div>
       </div>
     </section>
