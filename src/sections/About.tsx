@@ -1,51 +1,14 @@
+import Image from 'next/image';
+
 import { Card } from '@/components/Card';
 import { SectionTitle } from '@/components/SectionTitle';
 import { CardHeader } from '@/components/CardHeader';
 import { JobsItem } from '@/components/JobsItem';
-import Image from 'next/image';
+import { Toolbox } from '@/components/Toolbox';
 
 import mapImage from '@/assets/images/Spb_map.jpeg';
 import LocPointer from '@/assets/icons/location-pointer.svg';
-import { Toolbox } from '@/components/Toolbox';
-
-const hobbies = [
-  {
-    title: 'Gaming',
-    emoji: '🎮',
-    left: '5%',
-    top: '0%',
-  },
-  {
-    title: 'Traveling',
-    emoji: '✈️',
-    left: '55%',
-    top: '3%',
-  },
-  {
-    title: 'Cosplay',
-    emoji: '🧝‍♀️',
-    left: '40%',
-    top: '25%',
-  },
-  {
-    title: 'Fitness',
-    emoji: '🏋️‍♀️',
-    left: '13%',
-    top: '33%',
-  },
-  {
-    title: 'Crafting',
-    emoji: '🔱',
-    left: '66%',
-    top: '40%',
-  },
-  {
-    title: 'Sewing',
-    emoji: '🪡',
-    left: '30%',
-    top: '57%',
-  },
-];
+import { HobbiesBox } from '@/components/HobbiesBox';
 
 export const AboutSection = () => {
   return (
@@ -60,9 +23,11 @@ export const AboutSection = () => {
         <div className="mt-12 sm:flex sm:flex-col sm:gap-5">
           <div className="grid gap-6 md:grid-cols-5 md:grid-rows-5">
             <Card className="md:col-start-4 md:col-span-2 md:row-start-1 md:row-span-2">
-              <CardHeader title="Стек Технологий">Технологии и инструменты, используемые в работе.</CardHeader>
-              <Toolbox />
-              <Toolbox />
+              <CardHeader title="Стек Технологий" className="mb-1">
+                Технологии и инструменты, используемые в работе.
+              </CardHeader>
+              <Toolbox animate="animate-move-left" />
+              <Toolbox animate="animate-move-right" />
             </Card>
 
             <Card className="md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-3 md:h-full">
@@ -80,20 +45,7 @@ export const AboutSection = () => {
               <CardHeader title="Вне разработки" className="p-6">
                 Мои интересы и хобби.
               </CardHeader>
-              <div className="relative flex-1">
-                {hobbies.map((hobby) => (
-                  <div
-                    key={hobby.title}
-                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1 absolute"
-                    style={{
-                      left: hobby.left,
-                      top: hobby.top,
-                    }}>
-                    <span className="text-[15px] font-semibold tracking-wide text-gray-950/70">{hobby.title}</span>
-                    <span className="text-lg">{hobby.emoji}</span>
-                  </div>
-                ))}
-              </div>
+              <HobbiesBox />
               <p className="text-[10px] text-center tracking-widest mb-2 text-emerald-300/30">*Drag and drop</p>
             </Card>
 

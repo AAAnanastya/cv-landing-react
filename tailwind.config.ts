@@ -28,6 +28,22 @@ const config: Config = {
       colors: {
         'blue-emerald': '#0f1927',
       },
+      animation: {
+        'move-left': 'move-left 80s linear infinite',
+        'move-right': 'move-right 80s linear infinite',
+      },
+      keyframes: {
+        'move-left': {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-88%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'move-right': {
+          '0%': { transform: 'translateX(-88%)' },
+          '50%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-88%)' },
+        },
+      },
     },
   },
   plugins: [],
