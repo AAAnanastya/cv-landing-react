@@ -49,7 +49,7 @@ export const AboutSection: React.FC = () => {
               <p className="text-[10px] text-center tracking-widest mb-2 text-emerald-300/30">*Drag and drop</p>
             </Card>
 
-            <Card className="relative p-0 sm:h-[300px] md:h-[400px] md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-3 md:h-full">
+            <Card className="relative p-0 xs:h-[280px] sm:h-[300px] md:h-[400px] md:col-start-4 md:col-span-2 md:row-start-3 md:row-span-3 md:h-full">
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-1">
                 <LocPointer className="size-16" />
                 <div className="bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full pt-0.5 px-2 border border-[1.5px] border-gray-950">
@@ -59,7 +59,7 @@ export const AboutSection: React.FC = () => {
               <Image
                 src={mapImage}
                 alt="Saint-Petesberg map"
-                className="absolute z-0 sm:-translate-y-12 md:-translate-y-4 md:size-[550px] md:object-cover"
+                className="absolute z-0 xs:-translate-y-4 sm:-translate-y-12 md:-translate-y-4 md:size-[550px] md:object-cover"
               />
             </Card>
           </div>
