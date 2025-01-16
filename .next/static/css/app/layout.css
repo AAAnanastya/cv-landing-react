@@ -1494,6 +1494,11 @@ html {
   .xs\:text-\[22px\] {
     font-size: 22px;
   }
+
+  .xs\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 375px) {

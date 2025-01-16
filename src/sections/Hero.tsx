@@ -48,7 +48,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="max-w-md mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl tracking-wider text-center mt-8">Бастрыгина Анастасия</h1>
+          <h1 className="font-serif xs:text-2xl sm:text-3xl md:text-5xl tracking-wider text-center mt-8">Бастрыгина Анастасия</h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             Привет! Я начинающая фронтенд-разработчица, увлеченная созданием современных и удобных веб-интерфейсов.
           </p>
