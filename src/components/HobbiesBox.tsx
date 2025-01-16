@@ -2,7 +2,14 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
-const hobbies = [
+type HobbiesItem = {
+  title: string;
+  emoji: string;
+  left: string;
+  top: string;
+};
+
+const hobbies: HobbiesItem[] = [
   {
     title: 'Gaming',
     emoji: '🎮',
@@ -41,19 +48,21 @@ const hobbies = [
   },
 ];
 
-export const HobbiesBox = () => {
+export const HobbiesBox: React.FC = () => {
   const constraintRef = useRef(null);
 
   return (
     <div className="relative flex-1" ref={constraintRef}>
-      {hobbies.map((hobby) => (
+      {hobbies.map((hobby: HobbiesItem) => (
         <motion.div
           key={hobby.title}
           className="inline-flex items-center gap-2 xs:px-4 sm:px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full xs:py-0.5 sm:py-1 absolute"
-          style={{
-            left: hobby.left,
-            top: hobby.top,
-          }}
+          style={
+            {
+              left: hobby.left,
+              top: hobby.top,
+            } as React.CSSProperties
+          }
           drag
           dragConstraints={constraintRef}>
           <span className="xs:text-xs sm:text-[15px] font-semibold sm:tracking-wide text-gray-950/70">{hobby.title}</span>

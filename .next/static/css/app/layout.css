@@ -1203,10 +1203,6 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1460,8 +1456,17 @@ html {
     text-align: center;
   }
 
+  .xs\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .xs\:text-\[13px\] {
     font-size: 13px;
+  }
+
+  .xs\:text-\[23px\] {
+    font-size: 23px;
   }
 
   .xs\:text-sm {
@@ -1469,35 +1474,9 @@ html {
     line-height: 1.25rem;
   }
 
-  .xs\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .xs\:text-\[20px\] {
-    font-size: 20px;
-  }
-
-  .xs\:text-\[23px\] {
-    font-size: 23px;
-  }
-
-  .xs\:text-\[24px\] {
-    font-size: 24px;
-  }
-
-  .xs\:text-\[22px\] {
-    font-size: 22px;
-  }
-
-  .xs\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 

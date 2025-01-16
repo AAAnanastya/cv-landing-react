@@ -11,7 +11,12 @@ import { TechIcon } from '@/components/TechIcon';
 import { Fragment } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-const toolboxItems = [
+type ToolboxItem = {
+  title: string;
+  icon: React.ElementType;
+};
+
+const toolboxItems: ToolboxItem[] = [
   {
     title: 'JavaScript',
     icon: JSIcon,
@@ -56,7 +61,7 @@ export const Toolbox = ({ className, animate }: { className?: string; animate?: 
       <div className={twMerge('inline-flex gap-4 mt-3 mb-1 whitespace-nowrap', animate)}>
         {[...new Array(2)].fill(0).map((_, index) => (
           <Fragment key={index}>
-            {toolboxItems.map((item) => (
+            {toolboxItems.map((item: ToolboxItem) => (
               <div key={item.title} className="inline-flex items-center gap-3 py-1 px-5 outline outline-2 outline-white/10 rounded-lg">
                 <TechIcon component={item.icon} />
                 <span className="font-semibold">{item.title}</span>

@@ -1,13 +1,23 @@
+import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+
+import { SectionTitle } from '@/components/SectionTitle';
+import { Card } from '@/components/Card';
+
 import ToDoPreview from '@/assets/images/projects/todo_preview.jpeg';
 import RnMWikiPreview from '@/assets/images/projects/P&M_wiki_preview.jpeg';
 import FormPreview from '@/assets/images/projects/muiti_step_form_preview.jpeg';
 import SpaceTravelPreview from '@/assets/images/projects/Space_travel_preview.jpeg';
-import Image from 'next/image';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import { SectionTitle } from '@/components/SectionTitle';
-import { Card } from '@/components/Card';
 
-const portfolioProjects = [
+type PortfolioProject = {
+  title: string;
+  description: string;
+  link: string;
+  image: StaticImageData;
+};
+
+const portfolioProjects: PortfolioProject[] = [
   {
     title: 'Todo app',
     description: 'ToDo приложение с простым интерфейсом для организации задач с возможностью сортировки.',
@@ -34,7 +44,7 @@ const portfolioProjects = [
   },
 ];
 
-export const ProjectsSection = () => {
+export const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="py-20 pb-16 md:pb-20">
       <div className="container">
@@ -45,11 +55,11 @@ export const ProjectsSection = () => {
         />
 
         <div className="flex flex-col gap-16 md:gap-20 mt-10 md:pt-12">
-          {portfolioProjects.map((project, index) => (
+          {portfolioProjects.map((project: PortfolioProject, index: number) => (
             <Card
               key={project.title}
               className="pb-0 px-8 md:px-12 pt-8 md:pt-12 lg:p-14 sticky"
-              style={{ top: `calc(64px + ${index * 38}px)` }}>
+              style={{ top: `calc(64px + ${index * 38}px)` } as React.CSSProperties}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pr-5">
                   <h3
@@ -61,7 +71,9 @@ export const ProjectsSection = () => {
                   <p className="text-sm md:text-lg text-white/50 mt-4 sm:text-center lg:text-left">{project.description}</p>
 
                   <a href={project.link} target="_blank">
-                    <button className="bg-white text-gray-950 h-12 w-full lg:w-auto px-4 rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8">
+                    <button
+                      type="button"
+                      className="bg-white text-gray-950 h-12 w-full lg:w-auto px-4 rounded-xl font-semibold inline-flex justify-center items-center gap-2 mt-8">
                       <span>Перейти в репозиторий</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>

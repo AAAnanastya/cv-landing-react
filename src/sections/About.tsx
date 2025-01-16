@@ -10,7 +10,7 @@ import mapImage from '@/assets/images/Spb_map.jpeg';
 import LocPointer from '@/assets/icons/location-pointer.svg';
 import { HobbiesBox } from '@/components/HobbiesBox';
 
-export const AboutSection = () => {
+export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20">
       <div className="container">

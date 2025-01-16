@@ -1,6 +1,6 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="mt-24 relative overflow-x-clip pointer-events-auto">
       <div className="absolute sm:h-[300px] -z-10 md:h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)]"></div>

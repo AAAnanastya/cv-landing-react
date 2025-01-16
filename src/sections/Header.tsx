@@ -1,4 +1,4 @@
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
     <header className="flex justify-center items-center fixed w-[100%] top-3 z-10">
       <nav className="flex gap-1 p-0.5 border border-white/50 rounded-full bg-white/10 backdrop-blur">

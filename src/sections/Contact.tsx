@@ -1,7 +1,7 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import { Card } from '@/components/Card';
 
-export const ContactSection = () => {
+export const ContactSection: React.FC = () => {
   return (
     <section id="contacts" className="sm:mt-10 md:mt-12 lg:mt-20">
       <div className="container">
@@ -21,14 +21,14 @@ export const ContactSection = () => {
 
           <div className="flex flex-col items-center md:justify-between gap-2 text-[18px]">
             <a href="https://drive.google.com/drive/folders/1Lrlb7m4bnWY2DRDMMv5jNeUEVtvtR9i7?usp=sharing" target="_blank">
-              <button className="button-link">
+              <button type="button" className="button-link">
                 <span>Скачать CV PDF</span>
                 <ArrowUpRightIcon />
               </button>
             </a>
 
             <a href="https://t.me/fujiwaraeuph" target="_blank">
-              <button className="button-link">
+              <button type="button" className="button-link">
                 <span>Telegram</span>
                 <ArrowUpRightIcon />
               </button>
